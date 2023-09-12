@@ -20,8 +20,9 @@ public class GestorFiguras {
     }
 
     public static void main(String[] args) {
-        Figura[] v = new Figura[6];
+        Figura[] v = new Figura[2];
         v[0] = new Circulo(5);
+        v[1] = new Rectangulo(2,1);
 
         double r = GestorFiguras.suma(v);
 
