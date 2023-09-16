@@ -5,9 +5,10 @@ import java.util.Arrays;
 
 public class GestorFiguras {
 
-    public static void sort (Figura [] v) {
+    public static double sort (Figura [] v) {
         Arrays.sort(v);
 
+        return 0;
     }
 
     public static double suma (Figura[] v) {
@@ -26,6 +27,7 @@ public class GestorFiguras {
         v[2] = new Triangulo(2,3);
         v[3] = new Cuadrado(4);
 
+        double s = GestorFiguras.sort(v);
         double r = GestorFiguras.suma(v);
 
         System.out.println("El área total es: "+ r);
